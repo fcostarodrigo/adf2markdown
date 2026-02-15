@@ -26,7 +26,6 @@
   },
   "scripts": {
     "build": "bun build index.ts --outdir ./dist --format esm --target node --sourcemap=linked && tsc -p tsconfig.json --declaration --declarationMap --emitDeclarationOnly --outDir dist",
-    "publish": "bun run build && bun publish",
     "check": "bun audit && bun run format:check && bun run knip && bun run lint && bun run typeCheck && bun test",
     "test": "bun test",
     "lint": "oxlint",
