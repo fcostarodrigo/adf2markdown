@@ -1,8 +1,20 @@
 {
   "name": "adf2md",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
   "type": "module",
-  "module": "index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "default": "./dist/index.js"
+  },
   "scripts": {
+    "build": "bun build index.ts --outdir ./dist --format esm --target node --sourcemap=linked && tsc -p tsconfig.json --declaration --declarationMap --emitDeclarationOnly --outDir dist",
+    "publish": "bun run build && bun publish",
     "test": "bun test",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
