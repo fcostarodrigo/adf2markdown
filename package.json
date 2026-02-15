@@ -1,6 +1,18 @@
 {
   "name": "adf2markdown",
   "version": "0.0.0",
+  "keywords": [
+    "adf",
+    "atlassian",
+    "markdown"
+  ],
+  "homepage": "https://github.com/fcostarodrigo/adf2markdown#readme",
+  "license": "MIT",
+  "author": "Rodrigo Fernandes da Costa",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcostarodrigo/adf2markdown.git"
+  },
   "files": [
     "dist"
   ],
