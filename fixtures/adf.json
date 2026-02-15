@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "type": "doc",
+  "content": [
+    {
+      "type": "heading",
+      "attrs": { "level": 1 },
+      "content": [{ "type": "text", "text": "ADF to Markdown Features Example" }]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "This paragraph tests various marks: " },
+        { "type": "text", "text": "strong", "marks": [{ "type": "strong" }] },
+        { "type": "text", "text": ", " },
+        { "type": "text", "text": "italic", "marks": [{ "type": "em" }] },
+        { "type": "text", "text": ", " },
+        { "type": "text", "text": "strike", "marks": [{ "type": "strike" }] },
+        { "type": "text", "text": ", " },
+        { "type": "text", "text": "underline", "marks": [{ "type": "underline" }] },
+        { "type": "text", "text": ", " },
+        { "type": "text", "text": "code", "marks": [{ "type": "code" }] },
+        { "type": "text", "text": ", and a " },
+        { "type": "text", "text": "link", "marks": [{ "type": "link", "attrs": { "href": "https://example.com" } }] },
+        { "type": "text", "text": ". Also sub " },
+        { "type": "text", "text": "2", "marks": [{ "type": "subsup", "attrs": { "type": "sub" } }] },
+        { "type": "text", "text": " and sup " },
+        { "type": "text", "text": "2", "marks": [{ "type": "subsup", "attrs": { "type": "sup" } }] },
+        { "type": "text", "text": "." }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Item 1" }] }] },
+        {
+          "type": "listItem",
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "Item 2 with nested list" }] },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Nested item 1" }] }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "content": [
+        { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "First" }] }] },
+        {
+          "type": "listItem",
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "Second with nested ordered list" }] },
+            {
+              "type": "orderedList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Nested one" }] }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "blockquote",
+      "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "This is a blockquote." }] }]
+    },
+    {
+      "type": "codeBlock",
+      "attrs": { "language": "typescript" },
+      "content": [{ "type": "text", "text": "const hello = \"world\";" }]
+    },
+    {
+      "type": "panel",
+      "attrs": { "panelType": "info" },
+      "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Info panel content." }] }]
+    },
+    { "type": "rule" },
+    {
+      "type": "table",
+      "content": [
+        {
+          "type": "tableRow",
+          "content": [
+            {
+              "type": "tableHeader",
+              "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Col 1" }] }]
+            },
+            {
+              "type": "tableHeader",
+              "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Col 2" }] }]
+            }
+          ]
+        },
+        {
+          "type": "tableRow",
+          "content": [
+            {
+              "type": "tableCell",
+              "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Cell 1.1" }] }]
+            },
+            {
+              "type": "tableCell",
+              "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Cell 1.2" }] }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "inlineCard", "attrs": { "url": "https://atlassian.com" } },
+        { "type": "emoji", "attrs": { "shortName": ":smile:", "text": "😄" } },
+        { "type": "date", "attrs": { "timestamp": "1600000000000" } },
+        { "type": "status", "attrs": { "text": "DONE" } },
+        { "type": "mention", "attrs": { "text": "@User" } },
+        { "type": "text", "text": "Line 1" },
+        { "type": "hardBreak" },
+        { "type": "text", "text": "Line 2" }
+      ]
+    },
+    {
+      "type": "taskList",
+      "attrs": { "localId": "dccb7fea-7d85-4d0b-99a1-0039b95affa3" },
+      "content": [
+        {
+          "type": "taskItem",
+          "attrs": { "localId": "150e3625-956e-4d01-834f-e0f536cf3862", "state": "TODO" },
+          "content": [{ "type": "text", "text": "Not done task" }]
+        },
+        {
+          "type": "taskItem",
+          "attrs": { "localId": "67c4b4cc-409b-4675-ade2-ed62b85a0dfd", "state": "DONE" },
+          "content": [{ "type": "text", "text": "Done task" }]
+        }
+      ]
+    },
+    {
+      "type": "decisionList",
+      "attrs": { "localId": "3c4b7ddd-ddb0-4e8c-9459-f4bf68280fe8" },
+      "content": [
+        {
+          "type": "decisionItem",
+          "attrs": { "localId": "dea34710-b5a4-4b94-9c70-c64ec578f8da", "state": "DECIDED" },
+          "content": [{ "type": "text", "text": "Simple decision" }]
+        }
+      ]
+    }
+  ]
+}

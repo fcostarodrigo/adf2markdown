@@ -1,1 +1,1 @@
-export { greet } from "./src/greet.ts";
+export { adf2md, type Adf } from "./src/adf2md";
