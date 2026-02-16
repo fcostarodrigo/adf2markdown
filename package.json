@@ -25,7 +25,7 @@
     "default": "./dist/index.js"
   },
   "scripts": {
-    "build": "bun build index.ts --outdir ./dist --format esm --target node --sourcemap=linked && tsc -p tsconfig.json --declaration --declarationMap --emitDeclarationOnly --outDir dist",
+    "build": "bun build index.ts --outdir ./dist --format esm --target node --sourcemap=linked && tsc --declaration --emitDeclarationOnly --outDir dist --noEmit false",
     "check": "bun audit && bun run format:check && bun run knip && bun run lint && bun run typeCheck && bun test",
     "test": "bun test",
     "lint": "oxlint",
